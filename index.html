@@ -423,9 +423,14 @@
             </ul>
           </div>
           <div class="col-md">
-            <div id="map"></div>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Kahawa%20Wendani&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://webproject21.netlify.app/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">Kahawa Wendani</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+              </div>
+            </div>
           </div>
-        </div>
+          </div>
       </div>
     </section>
 
@@ -509,16 +514,5 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <script>
-      mapboxgl.accessToken = 'pk.eyJ1Ijoia2ltYXJyb3c5OCIsImEiOiJja3N1YmFtMTMxZXJ0MnZtZGQ1bWd5MWJkIn0.Zm92Ure3aJD-hUcdWcTa2g';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-1.1956421929152934, 36.92489646459941],
-        zoom: 6
-});
-
-    </script>
   </body>
 </html>
